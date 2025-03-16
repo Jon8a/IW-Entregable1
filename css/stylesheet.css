@@ -1,0 +1,108 @@
+/* HEADER */
+header {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: -20px;
+    background-color: white;
+}
+
+div.Contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Configuración logos */
+.LogoAbgam img {
+    height: 70px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.LogoSegula img {
+    height: 30px;
+    margin-right: 20px;
+}
+
+div.ListaOpciones {
+    flex-grow: 1;
+    text-align: right;
+    display: flex;
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+    padding: 40px;
+}
+
+#MenuPrincipal li {
+    display: inline;
+    padding: 30px;
+    font-size: 20px;
+}
+
+#MenuPrincipal li a {
+    text-decoration: none;
+    color: gray;
+}
+
+#MenuPrincipal li a:hover {
+    color: dodgerblue;
+}
+
+/* FOOTER */
+footer {
+    background-color: #323437;
+    padding: 40px;
+}
+
+div.ContenedorRedes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+div.ListaRedes {
+    flex-grow: 1;
+    text-align: right;
+    display: flex;
+    list-style: none;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+    padding: 40px;
+}
+
+#RedesSociales {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-left: 125px;
+}
+
+#RedesSociales li {
+    list-style: none;
+    margin: 0 10px;
+    margin-left: 20px;
+}
+
+#RedesSociales li img {
+    height: 40px;
+    width: auto;
+}
+
+div.footer {
+    color: white;
+    align-self: center;
+    margin-right: 180px;
+    font-size: 20px;
+}
+
+div.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* DEBUG */

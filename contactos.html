@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,60 +8,113 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 
 </head>
+
 <body>
-    
+
     <header>
-        
+
         <div class="contenedor">
-            
-        <a class="logo-abgam" href="principal.html" title="ABGAM">
-            <img src="images/LogoAbgam.png" alt="AbgamLogo">
-        </a>
+
+            <a class="logo-abgam" href="principal.html" title="ABGAM">
+                <img src="images/LogoAbgam.png" alt="AbgamLogo">
+            </a>
 
             <div class="lista-opciones">
-            
+
                 <ul id="menu-principal">
 
-                    <li id="ABGAM"> 
+                    <li id="ABGAM">
                         <a href="principal.html">ABGAM</a>
                     </li>
 
-                    <li id="Productos"> 
+                    <li id="Productos">
                         <a href="productos.html"> PRODUCTOS</a>
                     </li>
 
-                    <li id="Servicios"> 
+                    <li id="Servicios">
                         <a href="servicios.html">SERVICIOS</a>
                     </li>
 
-                    <li id="Industrias"> 
+                    <li id="Industrias">
                         <a href="industrias.html">INDUSTRIAS</a>
                     </li>
 
-                    <li id="Contactos"> 
+                    <li id="Contactos">
                         <a href="contactos.html">CONTACTOS</a>
                     </li>
-                    
+
 
 
                 </ul>
-        
+
 
 
             </div>
-        <a class="logo-segula" href="https://spain.segulatechnologies.com/es/">
-            <img src="images/LogoSegula.png" alt="SegulaLogo">
-        </a>
+            <a class="logo-segula" href="https://spain.segulatechnologies.com/es/">
+                <img src="images/LogoSegula.png" alt="SegulaLogo">
+            </a>
 
         </div>
     </header>
 
 
     <main>
+        <div class="contenedor-contacto">
+            <h1>Contacto</h1>
+
+            <div class="datos-contacto">
+                <p><strong> Ponerse en contacto con nosotros, utilizando los siguientes datos: </strong></p>
+                <p>Teléfono: 945 012 700</p>
+                <p> Dirección: Avenida Bruselas 8, 01003, Vitoria-Gasteiz (Álava) Spain.</p>
+                <p>O rellene el formulario, procesaremos su solicitud y nos pondremos en contacto en el menor tiempo
+                    posible.</p>
 
 
+            </div>
 
+            <br>
 
+            <form action="server.php" method="post">
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="number" id="telefono" name="telefono" required>
+
+                <label for="fecha">Fecha preferida de contacto:</label>
+                <input type="date" id="fecha" name="fecha">
+
+                <div id="tipo-consulta"> <!-- No se alinea no se porque -->
+                    <p><strong> Tipo de consulta:</strong></p>
+                    <label><input type="radio" name="consulta" value="informacion" checked> Solicitar
+                        información</label>
+                    <label><input type="radio" name="consulta" value="soporte"> Soporte técnico</label>
+                    <label><input type="radio" name="consulta" value="otros"> Otros</label>
+                </div>
+
+                <br>
+
+                <label for="servicio">Selecciona un servicio:</label>
+                <select id="servicio" name="servicio">
+                    <option value="consultoria">Consultoría de Procesos</option>
+                    <option value="mantenimiento">Mantenimiento y Asistencia</option>
+                    <option value="mecanizado">Servicios de Mecanizado</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <label><input type="checkbox" name="aceptar" required> Acepto la política de privacidad</label>
+                <!-- Con esto igual -->
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+
+        </div>
 
 
 
@@ -74,34 +128,34 @@
 
         <div class="contenedor-redes">
             <div id="lista-redes">
-            <ul id="redes-sociales">
+                <ul id="redes-sociales">
 
-                <li id="facebook">
-                    <a href="https://www.facebook.com/abgamsegulatechnologies/" target="_blank">
-                        <img src="images/4102573_applications_facebook_media_social_icon.svg" alt="Facebook"> <!-- Cambiado de 'Fotos' a 'images' -->
-                    </a>
-                </li>
+                    <li id="facebook">
+                        <a href="https://www.facebook.com/abgamsegulatechnologies/" target="_blank">
+                            <img src="images/4102573_applications_facebook_media_social_icon.svg" alt="Facebook">
+                        </a>
+                    </li>
 
-                <li id="twitter">
-                    <a href="https://x.com/ABGAM_SEGULA" target="_blank">
-                        <img src="images/317720_social media_tweet_twitter_social_icon.svg" alt="Twitter"> <!-- Cambiado de 'Fotos' a 'images' -->
-                    </a>
-                </li>
+                    <li id="twitter">
+                        <a href="https://x.com/ABGAM_SEGULA" target="_blank">
+                            <img src="images/317720_social media_tweet_twitter_social_icon.svg" alt="Twitter">
+                        </a>
+                    </li>
 
-                <li id="linkedin">
-                    <a  href="https://www.linkedin.com/in/jon-ochoa-cerezo/" >
-                        <img src="images/317725_linkedin_social_icon.svg" alt="LinkedIn"> <!-- Cambiado de 'Fotos' a 'images' -->
-                    </a>
-                </li>
+                    <li id="linkedin">
+                        <a href="https://www.linkedin.com/in/jon-ochoa-cerezo/">
+                            <img src="images/317725_linkedin_social_icon.svg" alt="LinkedIn">
+                        </a>
+                    </li>
 
-                <li id="youtube">
-                    <a href="https://www.youtube.com/user/ABGAMGRUPOSEGULA" target="_blank">
-                        <img src="images/4362951_youtube_logo_social media_icon.svg" alt="YouTube"> <!-- Cambiado de 'Fotos' a 'images' -->
-                    </a>
-                </li>
+                    <li id="youtube">
+                        <a href="https://www.youtube.com/user/ABGAMGRUPOSEGULA" target="_blank">
+                            <img src="images/4362951_youtube_logo_social media_icon.svg" alt="YouTube">
+                        </a>
+                    </li>
 
 
-            </ul>
+                </ul>
             </div>
             <div class="footer">
 
@@ -125,4 +179,5 @@
     </footer>
 
 </body>
+
 </html>

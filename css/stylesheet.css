@@ -270,7 +270,7 @@ main {
     width: 75%;
 }
 
-.servicios-img-pequeña{
+.servicios-img-pequeña {
     width: 5%;
 }
 
@@ -284,7 +284,7 @@ main {
     padding: 50px;
     align-content: center;
     justify-content: center;
-    
+
 }
 
 .industria {
@@ -302,14 +302,76 @@ main {
 
 
 
-.industria h2{
+.industria h2 {
     font-size: 22px;
     color: #0056b3;
 }
 
 #industrias {
     color: #007bff;
-    
+
+}
+
+/* PAGINA CONTACTO */
+
+/* Sección Contacto */
+.contenedor-contacto {
+    background-color: rgb(209, 229, 247);
+    padding: 30px;
+    border-radius: 15px;
+
+
+}
+
+.datos-contacto {
+    padding: 10px;
+    background-color: rgb(161, 193, 221);
+    border-radius: 15px;
+    width: 90%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+
+}
+
+label {
+    font-weight: bold;
+    width: 150px;
+    margin-right: 10px;
+}
+
+#tipo-consulta {
+    margin-top: 1px;
+    width: 450px;
+}
+
+input,
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+
+button {
+    align-self: center;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+
+
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 
@@ -329,7 +391,7 @@ div.contenedor-redes {
 }
 
 div.lista-redes {
-    flex-grow: 1;
+
     text-align: right;
     display: flex;
     list-style: none;
@@ -371,3 +433,219 @@ div.footer a {
 }
 
 /* DEBUG */
+
+/* AJUSTES PARA DISPOSITIVOS MOVILES*/
+@media (max-width: 768px) {
+
+    /* HEADER*/
+    header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    div.contenedor {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-abgam img,
+    .logo-segula img {
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    div.lista-opciones {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #menu-principal li {
+        display: block;
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    /* PAG PRINCIPAL*/
+    .introduccion {
+        padding: 20px;
+    }
+
+    .introduccion h1 {
+        font-size: 32px;
+    }
+
+    .introduccion p {
+        font-size: 16px;
+    }
+
+    .quienes-somos,
+    .proyectos,
+    .por-que-elegirnos {
+        padding: 20px;
+    }
+
+    .quienes-somos h2,
+    .proyectos h2,
+    .por-que-elegirnos h2 {
+        font-size: 28px;
+    }
+
+    .quienes-somos h3 {
+        font-size: 20px;
+    }
+
+    .quienes-somos p,
+    .quienes-somos ul,
+    .por-que-elegirnos li,
+    .por-que-elegirnos p {
+        font-size: 15px;
+    }
+
+    .proyectos th,
+    .proyectos td {
+        padding: 8px;
+    }
+
+    .contacto {
+        padding: 20px;
+    }
+
+    .contacto h2 {
+        font-size: 28px;
+    }
+
+    .contacto p {
+        font-size: 16px;
+    }
+
+    .contacto .btn {
+        padding: 10px 20px;
+    }
+
+    /* PAG PRODUCTOS*/
+    .productos h1 {
+        font-size: 32px;
+    }
+
+    .productos p {
+        font-size: 16px;
+    }
+
+    .contenedor-productos {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .producto h2 {
+        font-size: 20px;
+    }
+
+    .producto p {
+        font-size: 14px;
+    }
+
+    /* PAG SERVICIOS*/
+    .servicio {
+        padding: 20px;
+    }
+
+    .servicio h1 {
+        font-size: 24px;
+    }
+
+    .servicio h2 {
+        font-size: 20px;
+    }
+
+    .servicio p {
+        font-size: 16px;
+    }
+
+    /* PAG INDUSTRIAS*/
+    .industrias-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .industria {
+        width: 100%;
+    }
+
+    .industria h2 {
+        font-size: 20px;
+    }
+
+    /* PAG CONTACTO*/
+    .contenedor-contacto {
+        padding: 20px;
+    }
+
+    .datos-contacto {
+        width: 90%;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    label {
+        width: auto;
+    }
+
+    #tipo-consulta {
+        width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 90%;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* FOOTER*/
+    footer {
+        padding: 20px;
+    }
+
+    div.contenedor-redes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.lista-redes {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #redes-sociales {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    #redes-sociales li {
+        margin: 10px 0;
+    }
+
+    div.footer {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+/* Para ordenadores de menor resolucion no hago que al estar hecho con flexes parece que se adapta bien*/

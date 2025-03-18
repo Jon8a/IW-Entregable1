@@ -6,7 +6,7 @@ header {
     background-color: white;
 }
 
-div.Contenedor {
+div.contenedor {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,41 +14,185 @@ div.Contenedor {
 }
 
 /* Configuración logos */
-.LogoAbgam img {
+.logo-abgam img {
     height: 70px;
     width: 300px;
     margin-right: 10px;
 }
 
-.LogoSegula img {
+.logo-segula img {
     height: 30px;
     margin-right: 20px;
 }
 
-div.ListaOpciones {
+/* Lista con las paginas */
+div.lista-opciones {
     flex-grow: 1;
     text-align: right;
     display: flex;
     list-style: none;
     margin: auto;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
 }
 
-#MenuPrincipal li {
+#menu-principal li {
     display: inline;
-    padding: 30px;
+    padding: 10px;
     font-size: 20px;
 }
 
-#MenuPrincipal li a {
+#menu-principal li a {
     text-decoration: none;
     color: gray;
 }
 
-#MenuPrincipal li a:hover {
+#menu-principal li a:hover {
     color: dodgerblue;
 }
+
+/* MAIN */
+
+/* PAGINA PRINCIPAL */
+main {
+    margin: 40px auto;
+    max-width: 1200px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Sección de introducción */
+.introduccion {
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #007bff;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+
+}
+
+.introduccion h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.introduccion p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección comunes*/
+.quienes-somos, .proyectos, .por-que-elegirnos {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+/* Sección de quiénes somos */
+.quienes-somos h2, .proyectos h2 {
+    font-size: 32px;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quienes-somos h3 {
+    font-size: 24px;
+    color: #444;
+    margin-top: 15px;
+}
+
+.quienes-somos p, .quienes-somos ul {
+    font-size: 17px;
+    color: #555;
+}
+
+.quienes-somos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quienes-somos ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+/* Sección de por qué elegirnos */
+
+
+.por-que-elegirnos h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.por-que-elegirnos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.por-que-elegirnos li {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 17px;
+
+}
+
+
+
+/* Sección Proyectos */
+
+.proyectos th, .proyectos td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.proyectos th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* Sección Contacto */
+.contacto {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 40px;
+}
+
+.contacto h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contacto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contacto .btn {
+    padding: 12px 25px;
+    background-color: white;
+    color: #007bff;
+    text-decoration: none;
+    
+    
+}
+
+.contacto .btn:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
 
 /* FOOTER */
 footer {
@@ -56,7 +200,8 @@ footer {
     padding: 40px;
 }
 
-div.ContenedorRedes {
+/*Seccion de redes sociales*/
+div.contenedor-redes {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +209,7 @@ div.ContenedorRedes {
     margin: 10px 0;
 }
 
-div.ListaRedes {
+div.lista-redes {
     flex-grow: 1;
     text-align: right;
     display: flex;
@@ -75,24 +220,25 @@ div.ListaRedes {
     padding: 40px;
 }
 
-#RedesSociales {
+#redes-sociales {
     display: flex;
     flex-direction: row;
     padding: 0;
     margin-left: 125px;
 }
 
-#RedesSociales li {
+#redes-sociales li {
     list-style: none;
     margin: 0 10px;
     margin-left: 20px;
 }
 
-#RedesSociales li img {
+#redes-sociales li img {
     height: 40px;
     width: auto;
 }
 
+/*Seccion de texto*/
 div.footer {
     color: white;
     align-self: center;

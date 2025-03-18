@@ -81,17 +81,22 @@ main {
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto;
+    text-align: justify;
 }
 
 /* Sección comunes*/
-.quienes-somos, .proyectos, .por-que-elegirnos {
+.quienes-somos,
+.proyectos,
+.por-que-elegirnos {
     background-color: #f8f9fa;
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 40px;
 }
+
 /* Sección de quiénes somos */
-.quienes-somos h2, .proyectos h2 {
+.quienes-somos h2,
+.proyectos h2 {
     font-size: 32px;
     color: #007bff;
     text-align: center;
@@ -104,7 +109,8 @@ main {
     margin-top: 15px;
 }
 
-.quienes-somos p, .quienes-somos ul {
+.quienes-somos p,
+.quienes-somos ul {
     font-size: 17px;
     color: #555;
 }
@@ -146,7 +152,8 @@ main {
 
 /* Sección Proyectos */
 
-.proyectos th, .proyectos td {
+.proyectos th,
+.proyectos td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
@@ -183,8 +190,8 @@ main {
     background-color: white;
     color: #007bff;
     text-decoration: none;
-    
-    
+
+
 }
 
 .contacto .btn:hover {
@@ -192,6 +199,45 @@ main {
     color: white;
 }
 
+/* PAGINA PRODUCTOS */
+
+/* Sección Productos */
+.productos h1 {
+    font-size: 36px;
+    color: #007bff;
+}
+
+.productos p {
+    font-size: 18px;
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.producto img {
+    width: 150px;
+}
+
+.producto h2 {
+    font-size: 22px;
+    color: #007bff;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #666;
+}
 
 
 /* FOOTER */
